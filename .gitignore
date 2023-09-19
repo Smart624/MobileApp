@@ -1,0 +1,65 @@
+# Saiba mais em https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Dependências
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Nativo
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.DS_Store
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Arquivos de ambiente locais
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Diretórios de build e distribuição
+/android/app/build/
+/ios/build/
+/ios/DerivedData/
+
+# Logs
+logs
+*.log
+
+# Diretório do yarn
+.yarn/
+
+# Cache do Editor de código
+.vscode/
+.idea/
+
+# Arquivos temporários e diretórios
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Sistema de arquivos do Windows
+Thumbs.db
+Desktop.ini
+
+# Diretório de cobertura de testes
+/coverage/
