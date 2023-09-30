@@ -1,8 +1,13 @@
 import React from 'react';
-import Login from './screens/Login';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from './navigation/AppNavigator';
 
 const App: React.FC = () => {
-    return <Login />;
+    return (
+        <NavigationContainer>
+            <AppNavigator />
+        </NavigationContainer>
+    );
 };
 
 export default App;

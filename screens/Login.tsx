@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { View, StyleSheet, Alert, TouchableOpacity, Text } from 'react-native';
+import { View, StyleSheet, Alert, Text } from 'react-native';
 import { useAuthentication } from '../hooks/useAuthentication';
 import Input from '../components/Input';
 import Logo from '../components/Logo';
+import { Button } from 'react-native-elements';
 
 const Login: React.FC = () => {
     const { t } = useTranslation();
@@ -24,9 +25,14 @@ const Login: React.FC = () => {
             <Logo />
             <Input placeholder="Usuário" value={username} onChangeText={setUsername} editable={!loading} />
             <Input placeholder="Senha" secureTextEntry value={password} onChangeText={setPassword} editable={!loading} />
-            <TouchableOpacity style={styles.button} onPress={handleLogin} disabled={loading}>
-                <Text style={styles.buttonText}>Login</Text>
-            </TouchableOpacity>
+            <Button
+                title="Login"
+                onPress={handleLogin}
+                loading={loading}
+                disabled={loading}
+                buttonStyle={styles.button}
+                titleStyle={styles.buttonText}
+            />
         </View>
     );
 };
