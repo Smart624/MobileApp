@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { View, StyleSheet, Alert, Text } from 'react-native';
+import { View, StyleSheet, Alert } from 'react-native';
 import { useAuthentication } from '../hooks/useAuthentication';
 import Input from '../components/Input';
 import Logo from '../components/Logo';

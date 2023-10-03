@@ -4,7 +4,7 @@ import ServiceFactory from '../factories/ServiceFactory';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 
-type RootStackParamList = {
+export type RootStackParamList = {
   Login: undefined;
   Home: undefined;
   TodoList: undefined;

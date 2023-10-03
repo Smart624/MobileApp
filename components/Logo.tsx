@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { Image } from 'react-native-elements';
 import GlobalStyles from '../styles/GlobalStyles';
 
 const Logo: React.FC = () => {
